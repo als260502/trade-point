@@ -1,0 +1,22 @@
+{
+  "type": "postgres",
+  "host": "npinformatica.ddns.net",
+  "port": 5432,
+  "username": "trade_point",
+  "password": "trade_point#npinformatica2021",
+  "database": "trade_point",
+  "synchronize": false,
+  "entities": [
+    "src/entity/**/*.ts"
+  ],
+  "migrations": [
+    "./src/shared/infra/typeorm/migrations/*.ts"
+  ],
+  "subscribers": [
+    "./src/shared/infra/typeorm/subscriber/**/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/shared/infra/typeorm/migrations",
+    "subscribersDir": "./src/shared/infra/typeorm/subscriber"
+  }
+}

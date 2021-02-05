@@ -1,0 +1,14 @@
+Trade Point
+
+sistema consiste em criação de lojas para vendas de produtos no varejo.
+o usuario criará sua loja e podera expor seus prdutos com fotos.
+
+
+Vendedor
+o vendedor poderá incluir produtos, remover produtos, adicionar descontos
+gerenciar seu estoque de produtos.
+
+Usuario
+ver os produtos, comprar, cancelar compra, fazer contato com vendedor por email ou
+telefone da forma que o vendedor disponibilizar.
+
