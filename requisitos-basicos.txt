@@ -12,3 +12,58 @@ Usuario
 ver os produtos, comprar, cancelar compra, fazer contato com vendedor por email ou
 telefone da forma que o vendedor disponibilizar.
 
+# Funcionalidades macro
+  São coisas bem definidas por dentro mas conseguimos vela como uma tela do software
+
+
+# Funcionalidades 
+	*RF
+		-Requisitos Funcionais
+		 são as funcionalidades que teremos dentro de cada requisito macro.
+		 ex: o usuario vai poder recuperar a senha informando o email dele.	
+	*RNF
+		-Requisitos Não Funcionais
+		 são coisas que não sao ligadas diretamente com as regras de negócio(RN) da aplicação.
+		 ex: o envio de email precisa ser feito usando a biblioteca nodemailer.	
+	*RN
+		-Regras de Negócio
+		 são as regras e funcionalidades que regem o que acontece com os RF.
+		 ex: o link enviado por email deve expirar em duas horas.	
+
+
+
+# Tester automatizados
+
+	Garantem que nossa apicação continue funcinando independente do número de 
+novas funcionalidades e do numero de devs no time.
+
+1. Testes unitários (TDD)
+
+Testam funcuionalidades especificas da nossa aplicação (precisam ser funções puras).
+funções puras - sao funcçoes que nao dependem de outra parte de nossa aplicação
+dados os mesmos parametros, teremos sempre os mesmos resultados
+
+JAMAIS: fará chamada á uma API, ou tera efeito colateral(envido de email por exemplo)
+
+ex: um testa da nossa aplicação que se passamos uma variavel ela retorna outra caoisa
+
+2. Testes de integração
+
+Testam uma funcionalidade completa, passando por varias camadas da aplicação.
+
+ex: testes na função de cricção de usuario 
+Route -> Contoller -> Serviço -> Reposirório -> ...
+
+
+3. Teste E2E
+Sao testes que simulam a ação do usuario dentro da nossa aplicação, testes para frontend.
+
+ex: 
+1. Clique no inpute de email
+2. Preencha andre@np.com 
+3. Clique no input de senha
+4. Preencha 123456
+5. Clique no botao "Logar"
+6. Espero que a pagina tenha enviado o usuário para o dashboard. 
+
+# TDD (Teste Driven Development)
