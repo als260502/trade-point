@@ -15,7 +15,7 @@ import AppError from '@shared/errors/AppError';
 import routes from './routes';
 import '@shared/infra/typeorm';
 
-// import '@shared/container';
+import '@shared/container';
 // import rateLimiter from './middlewares/rateLimiter';
 
 const app = express();
